@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Link the Google Font 'Poppins' for the description -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--For Linkedin icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Browser_Tab-icon -->
+  <link rel="icon" type="image/png" href="Tab_logo.png" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Temperature Converter</h1>
+    <div class="converter-box">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="fromUnit">From:</label>
+          <input type="number" id="fromValue" class="form-control" placeholder="Enter value">
+          <select id="fromUnit" class="form-control">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="toUnit">To:</label>
+          <select id="toUnit" class="form-control">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+          <div class="button-row">
+            <button class="btn mt-3" onclick="convert()">Convert</button>
+            <button class="btn reset-btn mt-3" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3 class="result" id="result"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--Bootstrap JavaScript should be loaded after jQuery because here bootstrap.min.js is dependent on jQuery-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p>© 2023
+    <a href="https://www.linkedin.com/in/ankit-kumar-607310260/" class="footerlink" target="_blank">
+      Ankit Kumar
+      <i class="fab fa-linkedin fa-lg"></i> </a>. All rights reserved.
+  </p>
+</footer>
+
+</html>
